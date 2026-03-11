@@ -7,8 +7,8 @@
       "name": "medallion-button",
       "type": "registry:ui",
       "title": "Medallion Button",
-      "description": "MDS Button component — primary, secondary, tertiary, and destructive variants with optional leading/trailing icons and icon-only mode.",
-      "dependencies": ["antd", "classnames"],
+      "description": "MDS Button component — primary, secondary, tertiary, and destructive variants with optional leading/trailing icons and icon-only mode. Icons should use React Box Icons (react-icons/bi).",
+      "dependencies": ["antd", "classnames", "react-icons"],
       "files": [
         {
           "path": "registry/medallion-button.tsx",
