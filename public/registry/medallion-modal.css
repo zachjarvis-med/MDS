@@ -1,0 +1,77 @@
+/* MedallionModal styles
+ * Tokens resolved from MDS semantic tokens:
+ *   $contentPrimary       → #09090b
+ *   $borderSecondary      → #e4e4e7
+ *   $scale-06             → 24px
+ *   $font-weight-semibold → 600
+ *   $line-height-150      → 1.5
+ *   $radius-m             → 8px
+ *   $size-0               → 0px
+ *   $size-025             → 1px
+ *   $size-100             → 4px
+ *   $size-400             → 16px
+ *   $size-600             → 24px
+ *   $size-800             → 32px
+ */
+
+.medallion-modal {
+    max-width: 90vw;
+    margin: 32px 0;
+}
+
+.medallion-modal .ant-modal-title {
+    color: #09090b;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.medallion-modal .ant-modal-content,
+.medallion-modal .ant-modal-header {
+    border-radius: 8px;
+}
+
+.medallion-modal .ant-modal-header {
+    padding: 24px 24px 0 32px;
+    border-bottom: none;
+}
+
+.medallion-modal .ant-modal-body {
+    padding: 0;
+}
+
+.medallion-modal .medallion-modal-content {
+    padding: 24px 32px;
+}
+
+.medallion-modal .medallion-modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #e4e4e7;
+    padding: 16px;
+}
+
+.medallion-modal .medallion-modal-footer.medallion-modal-footer-content {
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.medallion-modal .medallion-modal-footer .medallion-modal-footer-left {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.medallion-modal .medallion-modal-footer .medallion-modal-footer-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.medallion-modal .ant-modal-close {
+    top: 4px;
+}
+
+.medallion-modal .ant-modal-close-icon {
+    color: #09090b;
+}
