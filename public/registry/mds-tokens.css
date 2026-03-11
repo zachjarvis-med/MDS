@@ -1,0 +1,201 @@
+/* MDS Design Tokens
+ *
+ * Resolved semantic tokens from the Medallion Design System.
+ * Source: frontend_service/src/assets/styles/mds/
+ *
+ * Typography
+ * - Primary font: Inter (https://fonts.google.com/specimen/Inter)
+ * - Mono font:    IBM Plex Mono
+ * - Legacy font:  Avenir Next
+ *
+ * Icon system: react-icons/bi (BoxIcons) — preferred for all MDS components
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ─── Typography ─────────────────────────────────────────── */
+  --mds-font-family:        'Inter', sans-serif;
+  --mds-font-family-mono:   'IBM Plex Mono', monospace;
+  --mds-font-family-legacy: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+
+  --mds-scale-01: 10px;
+  --mds-scale-02: 12px;
+  --mds-scale-03: 14px;
+  --mds-scale-04: 16px;
+  --mds-scale-05: 20px;
+  --mds-scale-06: 24px;
+  --mds-scale-07: 32px;
+  --mds-scale-08: 40px;
+  --mds-scale-09: 48px;
+  --mds-scale-10: 56px;
+  --mds-scale-11: 64px;
+
+  --mds-font-weight-regular:  400;
+  --mds-font-weight-medium:   500;
+  --mds-font-weight-semibold: 600;
+
+  --mds-line-height-100: 1;
+  --mds-line-height-125: 1.25;
+  --mds-line-height-150: 1.5;
+  --mds-line-height-175: 1.75;
+  --mds-line-height-200: 2;
+
+  /* ─── Content ────────────────────────────────────────────── */
+  --mds-content-primary:                    #09090b;
+  --mds-content-secondary:                  #52525c;
+  --mds-content-tertiary:                   #71717b;
+  --mds-content-disabled:                   #9f9fa9;
+  --mds-content-placeholder:                #d4d4d8;
+  --mds-content-active:                     #155dfc;
+  --mds-content-interactive:                #2b7fff;
+  --mds-content-interactive-on-surface:     #155dfc;
+  --mds-content-interactive-disabled:       #8ec5ff;
+  --mds-content-critical:                   #c10007;
+  --mds-content-critical-on-surface:        #9f0712;
+  --mds-content-critical-disabled:          #ffa2a2;
+  --mds-content-warning:                    #d08700;
+  --mds-content-warning-on-surface:         #a65f00;
+  --mds-content-success:                    #009966;
+  --mds-content-success-on-surface:         #007a55;
+  --mds-content-informative:                #8e51ff;
+  --mds-content-informative-on-surface:     #7f22fe;
+  --mds-content-inverse-primary:            #ffffff;
+  --mds-content-inverse-secondary:          #e4e4e7;
+  --mds-content-inverse-tertiary:           #9f9fa9;
+  --mds-content-inverse-disabled:           #71717b;
+  --mds-content-inverse-placeholder:        #52525c;
+
+  /* ─── Surface ────────────────────────────────────────────── */
+  --mds-surface-primary:                    #ffffff;
+  --mds-surface-primary-hovered:            #f4f4f5;
+  --mds-surface-primary-pressed:            #e4e4e7;
+  --mds-surface-disabled:                   #fafafa;
+  --mds-surface-secondary:                  #fafafa;
+  --mds-surface-secondary-hovered:          #e4e4e7;
+  --mds-surface-secondary-pressed:          #d4d4d8;
+  --mds-surface-tertiary:                   #f4f4f5;
+  --mds-surface-tertiary-hovered:           #e4e4e7;
+  --mds-surface-tertiary-pressed:           #d4d4d8;
+  --mds-surface-quaternary:                 #e4e4e7;
+  --mds-surface-quaternary-hovered:         #d4d4d8;
+  --mds-surface-quaternary-pressed:         #9f9fa9;
+
+  /* Surface Semantic */
+  --mds-surface-highlight:                  #eff6ff;
+  --mds-surface-highlight-hovered:          #dbeafe;
+  --mds-surface-highlight-pressed:          #bedbff;
+  --mds-surface-critical:                   #fef2f2;
+  --mds-surface-critical-hovered:           #ffe2e2;
+  --mds-surface-critical-pressed:           #ffc9c9;
+  --mds-surface-warning:                    #fefce8;
+  --mds-surface-warning-hovered:            #fef9c2;
+  --mds-surface-warning-pressed:            #fff085;
+  --mds-surface-success:                    #f0fdf4;
+  --mds-surface-success-hovered:            #dcfce7;
+  --mds-surface-success-pressed:            #b9f8cf;
+  --mds-surface-informative:                #f5f3ff;
+  --mds-surface-informative-hovered:        #ede9fe;
+  --mds-surface-informative-pressed:        #ddd6ff;
+
+  /* Inverse Surface */
+  --mds-surface-inverse-primary:            #0e2327;
+  --mds-surface-inverse-primary-hovered:    #073a42;
+  --mds-surface-inverse-primary-pressed:    #0d5560;
+  --mds-surface-inverse-secondary:          #27272a;
+  --mds-surface-inverse-secondary-hovered:  #3f3f46;
+  --mds-surface-inverse-secondary-pressed:  #52525c;
+
+  /* ─── Fill ───────────────────────────────────────────────── */
+  --mds-fill-brand-default:                 #3953ec;
+  --mds-fill-brand-hovered:                 #647ffa;
+  --mds-fill-brand-pressed:                 #2639c7;
+  --mds-fill-brand-dark:                    #073a42;
+  --mds-fill-brand-dark-hovered:            #0e2327;
+  --mds-fill-brand-dark-pressed:            #0e2327;
+  --mds-fill-brand-disabled:                #d4d4d8;
+  --mds-fill-primary:                       #ffffff;
+  --mds-fill-primary-hovered:               #f4f4f5;
+  --mds-fill-primary-pressed:               #e4e4e7;
+  --mds-fill-secondary:                     #f4f4f5;
+  --mds-fill-secondary-hovered:             #d4d4d8;
+  --mds-fill-secondary-pressed:             #9f9fa9;
+  --mds-fill-tertiary:                      #e4e4e7;
+  --mds-fill-tertiary-hovered:              #d4d4d8;
+  --mds-fill-tertiary-pressed:              #9f9fa9;
+  --mds-fill-disabled:                      #e4e4e7;
+  --mds-fill-highlight:                     #eff6ff;
+  --mds-fill-highlight-hovered:             #dbeafe;
+  --mds-fill-highlight-pressed:             #bedbff;
+  --mds-fill-destructive-default:           #c10007;
+  --mds-fill-destructive-hovered:           #9f0712;
+  --mds-fill-destructive-pressed:           #82181a;
+  --mds-fill-destructive-disabled:          #d4d4d8;
+  --mds-fill-transparent:                   rgba(0, 0, 0, 0);
+  --mds-fill-transparent-hovered:           rgba(0, 0, 0, 0.05);
+  --mds-fill-transparent-pressed:           rgba(0, 0, 0, 0.1);
+
+  /* ─── Border ─────────────────────────────────────────────── */
+  --mds-border-primary:                     #9f9fa9;
+  --mds-border-primary-hovered:             #52525c;
+  --mds-border-secondary:                   #e4e4e7;
+  --mds-border-secondary-hovered:           #9f9fa9;
+  --mds-border-tertiary:                    #f4f4f5;
+  --mds-border-tertiary-hovered:            #d4d4d8;
+  --mds-border-disabled:                    #f4f4f5;
+  --mds-border-highlight:                   #2b7fff;
+  --mds-border-highlight-muted:             #bedbff;
+  --mds-border-highlight-hovered:           #155dfc;
+  --mds-border-critical:                    #ffa2a2;
+  --mds-border-critical-muted:              #ffc9c9;
+  --mds-border-critical-hovered:            #fb2c36;
+  --mds-border-critical-disabled:           #ffe2e2;
+  --mds-border-input-critical:              #fb2c36;
+  --mds-border-input-critical-hovered:      #e7000b;
+  --mds-border-focus-critical:              #ffc9c9;
+  --mds-border-warning:                     #f0b100;
+  --mds-border-warning-muted:               #ffdf20;
+  --mds-border-warning-hovered:             #d08700;
+  --mds-border-success:                     #05df72;
+  --mds-border-success-muted:               #7bf1a8;
+  --mds-border-success-hovered:             #00c950;
+  --mds-border-informative:                 #c4b4ff;
+  --mds-border-informative-muted:           #ddd6ff;
+  --mds-border-informative-hovered:         #8e51ff;
+  --mds-border-focus:                       #bedbff;
+  --mds-border-inverse-primary:             #71717b;
+  --mds-border-inverse-secondary:           #3f3f46;
+
+  /* ─── Brand Primitives ───────────────────────────────────── */
+  --mds-brand-teal-50:   #eaf5f6;
+  --mds-brand-teal-100:  #d6edf0;
+  --mds-brand-teal-200:  #b7e0e6;
+  --mds-brand-teal-300:  #8dd0da;
+  --mds-brand-teal-400:  #5fc4d4;
+  --mds-brand-teal-500:  #2aa8bc;
+  --mds-brand-teal-600:  #178495;
+  --mds-brand-teal-700:  #1b6c79;
+  --mds-brand-teal-800:  #0d5560;
+  --mds-brand-teal-900:  #073a42;
+  --mds-brand-teal-950:  #0e2327;
+  --mds-brand-green-50:  #e8f7f2;
+  --mds-brand-green-100: #d1f5e9;
+  --mds-brand-green-200: #a4efd6;
+  --mds-brand-green-300: #7aebc5;
+  --mds-brand-green-400: #22dda8;
+  --mds-brand-green-500: #00c291;
+  --mds-brand-green-600: #00997c;
+  --mds-brand-green-700: #007a63;
+  --mds-brand-green-800: #005e4c;
+  --mds-brand-green-900: #005242;
+  --mds-brand-green-950: #003329;
+
+  /* ─── Shadows ────────────────────────────────────────────── */
+  --mds-shadow-xxs: 0 1px 0 0 rgba(0, 0, 0, 0.05);
+  --mds-shadow-xs:  0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --mds-shadow-s:   0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --mds-shadow-m:   0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --mds-shadow-l:   0 10px 15px -3px rgba(0, 0, 0, 0.12), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  --mds-shadow-xl:  0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --mds-shadow-xxl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
