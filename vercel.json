@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd mds-v0-registry && npm install",
+  "outputDirectory": "mds-v0-registry/public",
+  "env": []
+}
